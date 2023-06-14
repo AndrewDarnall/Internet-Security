@@ -67,8 +67,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">The dangers of not knowing math</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./top_5.php">Our top 5 selling exploits</a>
+                </li>
                 </ul>
             </div>
+            <!-- Might be caising some issues -->
             <form class="search-form" action="./query_page.php" method="POST">
                 <input type="text" name="exploit" placeholder="Seek the exploit">
                 <button type="submit">Search</button>

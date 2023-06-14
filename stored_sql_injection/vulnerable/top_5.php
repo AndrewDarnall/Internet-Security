@@ -16,7 +16,7 @@
 
     $conn = new mysqli($servername, $username, $password, $database);
  
-    $sql = "select * from exploits where item_name = '" . $_POST['exploit'] .  "'";
+    $sql = "select * from exploits limit 5";
     $result = $conn->query($sql);
 
     if($result->num_rows > 0) {
@@ -34,15 +34,5 @@
 
     $conn->close();
 ?>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>Got an exploit? Want to sell it? Let us know what you have and how much you want for it! </h1>
-    <form action="./item_insert.php" action="POST">
-        <input type="text" name="exploit" placeholder="Exploit name">
-        <input type="number" name="price" palceholder="Name your price">
-        <button type="submit">Submit</button>
-    </form>
     </body>
 </html>

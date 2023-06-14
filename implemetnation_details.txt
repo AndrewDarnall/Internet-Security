@@ -1,0 +1,15 @@
+The demo implementation consists in a vulnerable web app that shows how a regular blind sql
+injection works + the same program with the patch that prevents the attack.
+
+Then there I will implement a web app that is vulnerable to a blind sql injection + the same web app
+with the 'patch' that prevents that attack
+
+It could be fruitful to include all types of sql injections attacks, show an example
+of them + their prevention/patch
+
+An important aspect of the project is the history of the attack, when it begain, who invented it
+when has it been the most popular and what are the current statistics on this particular type
+of attack
+
+Do note that as of the moment I am writing this, code injections attacks are the most popular
+types of attacks that there are (not specific to sql injections though)

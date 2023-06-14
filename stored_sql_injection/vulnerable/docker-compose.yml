@@ -1,0 +1,21 @@
+# Docker compose for website vulnerable to blind sql injections
+version: '3.3'
+services:
+  server:
+    image: project:stored_sql_website
+    ports:
+    - "81:80"
+    networks:
+      - project_work
+  mysql:
+    image: project:stored_sql_db
+    container_name: mysql_backend
+    ports:
+    - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345
+    networks:
+      - project_work
+
+networks: 
+  project_work:

@@ -1,0 +1,23 @@
+~~~~ Stored SQL Injection ~~~~
+~~~~ Project Work Andrew R. Darnall ~~~~
+~~~~ Matricola 1000026223 ~~~~
+
+
+Sommario
+
+# Introduzione
+- 1 Breve cenno sulla storia delle sql injections
+- 2 Elenco dei diversi tipi di sql injections
+# Discussione
+- 3 Come funziona la stored sql injection (sql injection di secondo ordine)
+- 4 Come ci si puo' difendere dall'attacco
+- 5 Statistiche recenti su attacchi sql e loro tipologia {from OWASP as well}
+- 6 Spiegare perche' avvengono ancora gli attacchi se si possono mitigare
+# Conclusioni
+- 7 Conclusioni in base all'attacco 
+
+{ 
+    The objective of the Project Work is NOT to create a working demo, but rather
+    to use the research methodology, apply it in this context, derive my personal
+    conclusions and report my findings    
+}

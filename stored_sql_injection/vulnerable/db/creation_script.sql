@@ -1,14 +1,13 @@
--- db creation script for item (advice) storage and registration
+-- db creation script for user registration
+create schema users;
 
-create schema Exploits;
+use users;
 
-use Exploits;
-
-create table exploits
+create table Users
 (
     id int primary key auto_increment,
-    item_name varchar(45) not null,
-    item_price float not null
+    username varchar(45) not null,
+    password varchar(45) not null
 );
 
-insert into exploits (item_name, item_price) values ('sql_injection',5.99), ('buffer_overflow',5.99), ('firmware_exploit',50.99), ('DMI_network_hack',100.99), ('30_e_Lode_Internet_Security',1000000.00);
+insert into Users(username,password) values ('clintEastWood','SomeThingBoutAWoman'), ('user','password'),('admin','secret_password');

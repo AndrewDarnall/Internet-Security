@@ -1,4 +1,4 @@
-# Docker compose for website vulnerable to blind sql injections
+# Docker compose for website vulnerable to a 'classic' sql injections
 version: '3.3'
 services:
   server:

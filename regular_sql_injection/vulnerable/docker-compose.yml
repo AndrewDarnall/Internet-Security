@@ -1,14 +1,14 @@
-# Docker compose for website vulnerable to blind sql injections
+# Docker compose for a fixed website that was vulnerable to 'classic' sql injections
 version: '3.3'
 services:
   server:
-    image: project:blind_sql_website
+    image: project:classic_sql_website
     ports:
     - "81:80"
     networks:
       - project_work
   mysql:
-    image: project:blind_sql_db
+    image: project:classic_sql_db
     container_name: mysql_backend
     ports:
     - "3306:3306"

@@ -3,6 +3,10 @@
 <html>
     <head>
         <title>Credentials Verification</title>
+        <!-- Bootstrap 5 CSS framework -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <style>
             * {text-align: center;}
         </style>
@@ -35,13 +39,15 @@
     if($result->num_rows > 0) {
 
         $_SESSION['loggedin'] = true;
-        echo "<h1 style=\"text-align: center; color: green;\"> Login Succesful </h1>";
+        echo "<div class=\"mt-4 p-5 bg-primary text-white rounded\">";
+        echo "<h1 style=\"text-align: center; color: green;\"> Login Succesful </h1></div>";
         $conn->close();
         echo "<br>";
-        echo "<form action=\"./index.php\" method=\"GET\"> <input type=\"submit\" name=\"Go to website\" value=\"Go to website\"></form>";
+        echo "<form action=\"./index.php\" method=\"GET\"> <input class=\"btn btn-primary btn-md\" type=\"submit\" name=\"Go to website\" value=\"Go to website\"></form>";
     } else {
         $conn->close();
-        echo "<h1 style=\"text-align: center; color: red;\"> Login Failed </h1>";
+        echo "<div class=\"mt-4 p-5 bg-primary text-white rounded\">";
+        echo "<h1 style=\"text-align: center; color: red;\"> Login Failed </h1></div>";
         echo "<br>";
         echo "<form action=\"./login.php\" method=\"GET\"> <input type=\"submit\" name=\"retry\" value=\"Retry\"></form>";
     }

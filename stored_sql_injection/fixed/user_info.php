@@ -14,13 +14,19 @@
 <html>
     <head>
         <title>Contact Info</title>
+        <!-- Bootstrap 5 CSS framework -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <style>
             * {text-align: center;}
         </style>
     </head>
-    <body>
-        <h1>Your Information</h1>
-        <table>
+    <body class="container">
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Your Information</h1>
+        </div>
+        <table class="table table-striped">
             <tr><th>Username</th><th>Email</th><th>Address</th></tr>
             <?php 
 
@@ -72,7 +78,7 @@
             <br>
             <br>
             <form action='./login.php' method='POST'>
-                <input type="submit" value="logout">    
+                <input class="btn btn-primary btn-md" type="submit" value="logout">    
                 <inut type="hidden" value="logout">
             </form>
     </body>

@@ -22,6 +22,13 @@
 
     $stmt->close();
 
+    $sql1 = "insert into Sessions (username,session_id) values ('" . $_POST['username'] . "','" . session_id() . "')";
+    $result1 = $conn->query($sql1);
+
+    if($result1 == false) {
+        echo "<p styl=\"color: red;\"> Something went wrong with the session ID </p>";
+    }
+
     if($result->num_rows > 0) {
 
         $_SESSION['loggedin'] = true;

@@ -2,20 +2,20 @@
 version: '3.3'
 services:
   server:
-    image: project:regular_sql_website_fixed
+    image: project:stored_sql_website_fixed
     ports:
     - "81:80"
     networks:
-      - project_work
+      - vulnerable_project_work
   mysql:
-    image: project:regular_sql_db
+    image: project:stored_sql_db
     container_name: mysql_backend
     ports:
     - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=12345
     networks:
-      - project_work
+      - vulnerable_project_work
 
 networks: 
-  project_work:
+  vulnerable_project_work:

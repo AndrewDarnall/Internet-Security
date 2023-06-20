@@ -33,6 +33,8 @@
             $email = $conn->real_escape_string($email);
             $address = $conn->real_escape_string($address);
 
+            echo "<p>Email: $email - Address: $address</p>"; 
+
 
             $sql = "insert into Users (username,password,email,address) values ('$username','$password','$email','$address')";
             $result = $conn->query($sql);

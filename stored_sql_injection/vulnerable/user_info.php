@@ -40,6 +40,7 @@
 
                     $row = $result->fetch_assoc();
                     $username = (string)$row['username'];
+                    // echo "<p> Username: $username </p>";
                     $sql2 = "select username, email, address from Users where username = '$username'";
                     $result2 = $conn->query($sql2);
 
@@ -60,5 +61,12 @@
 
             ?>
         </table>
+        <br>
+            <br>
+            <br>
+            <form action='./login.php' method='POST'>
+                <input type="submit" value="logout">    
+                <inut type="hidden" value="logout">
+            </form>
     </body>
 </html>

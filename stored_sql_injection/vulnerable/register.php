@@ -26,8 +26,8 @@
                 echo "<label>Password:</label>";
                 echo "<input type=\"password\" name=\"password\" required><br><br>";
                 
-                echo "    <label>Email:</label>";
-                echo "<input type=\"text\" name=\"email\" required><br><br>";
+                echo "<label>Email:</label>";
+                echo "<input type=\"email\" name=\"email\" required><br><br>";
 
                 echo "    <label>Address:</label>";
                 echo "<input type=\"text\" name=\"address\" required><br><br>";

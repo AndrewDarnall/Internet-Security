@@ -67,6 +67,7 @@
                 $conn->close();
 
             ?>
+            </table>
             <br>
             <br>
             <br>
@@ -74,6 +75,5 @@
                 <input type="submit" value="logout">    
                 <inut type="hidden" value="logout">
             </form>
-        </table>
     </body>
 </html>

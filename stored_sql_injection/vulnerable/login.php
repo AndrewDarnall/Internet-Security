@@ -10,6 +10,8 @@
     // start the session
     session_start();
 
+    session_regenerate_id();
+
     $_SESSION['loggedin'] = false;
 
 ?>

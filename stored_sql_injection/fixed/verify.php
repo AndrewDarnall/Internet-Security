@@ -22,7 +22,10 @@
 
     $stmt->close();
 
-    $sql1 = "insert into Sessions (username,session_id) values ('" . $_POST['username'] . "','" . session_id() . "')";
+    $username = $_POST['username'];
+    $username = $conn->real_escape_string($username);
+
+    $sql1 = "insert into Sessions (username,session_id) values ('" . $username . "','" . session_id() . "')";
     $result1 = $conn->query($sql1);
 
     if($result1 == false) {
